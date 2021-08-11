@@ -1,7 +1,13 @@
+:root {
+  --clr-primary: #1d91f0;
+  --clr-primary-dark: #095d91;
+  --clr-primary-bg: #87ceeb;
+}
+
 body {
   margin: 0;
   paddding: 0;
-  background-color: antiquewhite;
+  background: linear-gradient(var(--clr-primary-bg), var(--clr-primary));
 }
 
 *,
@@ -15,16 +21,68 @@ img {
 }
 
 h1 {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   text-align: center;
 }
 h2 {
   text-align: center;
 }
 
+/*1. Home */
 .home {
-  background-color: rgb(158, 188, 245);
+  height: 400px;
+  padding: 2em;
 }
+.home h1 {
+  margin: 1em;
+}
+
 .quote {
-  margin: 1.5em;
+  margin: 0.5em;
+  margin-top: 4em;
   font-size: 1.5rem;
+}
+.main__nav {
+  margin-top: 0;
+  background-color: #222;
+  height: 250px;
+  text-align: center;
+  height: max-content;
+  padding: 2em;
+}
+
+.links {
+  font-size: 2.5rem;
+  margin: auto;
+  padding: 0.3em;
+  color: rgb(211, 211, 211);
+}
+.links:hover {
+  color: var(--clr-primary-bg);
+}
+
+/* 2. About Me*/
+.aboutme__cont {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "photo sidetext";
+  gap: 3em;
+}
+
+.item1 {
+  grid-area: "sidetext";
+  text-align: center;
+}
+.item2 {
+  grid-area: "photo";
+  text-align: center;
+  margin: 3em;
+}
+
+.aboutme img {
+  border-radius: 50%;
+  width: 247.2px;
+  height: 295.5px;
 }
