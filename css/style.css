@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  paddding: 0;
+  background-color: antiquewhite;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+.home {
+  background-color: rgb(158, 188, 245);
+}
+.quote {
+  margin: 1.5em;
+  font-size: 1.5rem;
+}
