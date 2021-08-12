@@ -17,6 +17,7 @@
                
             <h1>Mikael Larsson</h1>
             <h2>Webbutvecklare</h2>
+            
             <blockquote class="blockquote-reverse quote">
 		
                 <p>I strive to learn new things in life all the time </p>
@@ -25,38 +26,56 @@
                 <footer>Mikael Larsson</footer>
             
             </blockquote>
-        
+            <hr class="whiteline">
         </section>
         <nav class="main__nav">
-                <a class="links" href="/index.html">Home</a>
-                <a class="links" href="/about.html">About Me</a>
-                <a class="links" href="/portfolio.html">Portfolio</a>
-                <a class="links" href="/contact.html">Contact</a>
-        </nav>
+            <a class="links" href="/index.html">Home</a>
+            <a class="links" href="/about.html">About Me</a>
+            <a class="links" href="/portfolio.html">Portfolio</a>
+            <a class="links" href="/contact.html">Contact</a>
+    </nav>
     </header>
 
     <section class="aboutme">
-        <div class="aboutme__cont"></div>
-        <div class="item1"><h1>Who am I?</h1>
+        <h1>Who am I?</h1>
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo deserunt unde at sapiente error corporis labore, excepturi rem consequuntur? Natus est alias rem, ab distinctio quibusdam velit. Id, fugiat molestias?
         </p>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus totam pariatur saepe, aliquam facilis eveniet corporis ipsam consequatur quasi eos!
         </p>
-    </div>
     <div class="item2">    
     <img id="aboutme__img" src="img/Mikael.JPG" alt="Picture of me">
 </div>    
+<hr class="whiteline">
 </section>
 
     <section class="portfolio">
         <h1>Some of my work</h1>
-        <p>CAROUSEL HERE</p>
+        <div class="projects_container">
+
+            <div id="showroom">
+                <img class="showroom__img project" src="img/Shoowroom.png" alt="picture of a portfolio project">
+                    <p class="showroom__text project__text">A portfolio made in React, as part of a school assignment.</p>
+                </div>
+            </div>    
+
+            <div id="calculator">
+                <img class="calc__img project" src="img/geometricCalculator.png" alt="picture of geometric calculator project">
+                <p class="project__text">A calculator that calculates the area and perimeter of shapes. Console app in C#.</p>
+            </div>
+
+            <div id="adventure">
+                <img class="advent__img project" src="img/adventure.png" alt="picture of adventure game">
+                <p class="project__text">One of my first school assigments. An adventure game made in C#. </p>
+            </div>
+        </div>
+        <div class="portf__cont">
+           
         <h3>Techniques I have used</h3>
         <h3>Try my game</h3>
 
-
+        <hr class="whiteline">
     </section>
 
     <section class="contact">
@@ -64,8 +83,10 @@
         <p>CONTACTFORM HERE</p>
         <p>GOOGLEMAPS API HERE</p>
         <p>I live in Vänersborg, Sweden, and I am open for work within a distance of 45min drive. I am also intressted in part time or full time work from home. </p>
-
+        <hr class="whiteline">
     </section>
+
+    <script src="javascript/scripts.js"></script>
 </body>
 <footer class="main__footer">
     <nav>

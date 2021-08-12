@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap");
+
 :root {
   --clr-primary: #1d91f0;
   --clr-primary-dark: #095d91;
@@ -20,32 +22,36 @@ img {
   max-width: 100%;
 }
 
+header {
+  width: 100%;
+}
+
 h1 {
   text-transform: uppercase;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-align: center;
 }
 h2 {
   text-align: center;
 }
-
+.whiteline {
+  margin: 4em;
+}
 /*1. Home */
 .home {
-  height: 400px;
-  padding: 2em;
-}
-.home h1 {
-  margin: 1em;
+  height: fit-content;
 }
 
 .quote {
   margin: 0.5em;
   margin-top: 4em;
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
 .main__nav {
-  margin-top: 0;
   background-color: #222;
   height: 250px;
   text-align: center;
@@ -59,30 +65,53 @@ h2 {
   padding: 0.3em;
   color: rgb(211, 211, 211);
 }
+
 .links:hover {
   color: var(--clr-primary-bg);
 }
 
 /* 2. About Me*/
-.aboutme__cont {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "photo sidetext";
-  gap: 3em;
-}
-
-.item1 {
-  grid-area: "sidetext";
+.aboutme {
   text-align: center;
-}
-.item2 {
-  grid-area: "photo";
-  text-align: center;
-  margin: 3em;
 }
 
 .aboutme img {
   border-radius: 50%;
   width: 247.2px;
   height: 295.5px;
+}
+
+/* 3. Portfolio*/
+
+.projects_container {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  padding: 1rem;
+}
+.project {
+  border: solid 0.25em white;
+  cursor: pointer;
+  margin: 1em;
+}
+.project:hover {
+  opacity: 0.8;
+}
+
+#showroom {
+  text-align: center;
+  margin: 0;
+}
+.showroom__text {
+}
+
+#calculator {
+  text-align: center;
+  margin: 0;
+}
+#adventure {
+  text-align: center;
+  margin: 0;
 }
