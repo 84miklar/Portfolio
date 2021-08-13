@@ -13,10 +13,9 @@
 <body>
     <header>
         
-        <section class="home">
-               
+        <section id="home">
             <h1>Mikael Larsson</h1>
-            <h2>Webbutvecklare</h2>
+            <h2>Developer</h2>
             
             <blockquote class="blockquote-reverse quote">
 		
@@ -29,28 +28,34 @@
             <hr class="whiteline">
         </section>
         <nav class="main__nav">
-            <a class="links" href="/index.html">Home</a>
-            <a class="links" href="/about.html">About Me</a>
-            <a class="links" href="/portfolio.html">Portfolio</a>
-            <a class="links" href="/contact.html">Contact</a>
+            <ul>
+                <li> <a class="links" href="#home">Home</a></li>
+                <li> <a class="links" href="#aboutme">About Me</a></li>
+                <li> <a class="links" href=#portfolio>Portfolio</a></li>
+                <li> <a class="links" href="#contact">Contact</a></li>
+            </ul>
+           
     </nav>
     </header>
 
-    <section class="aboutme">
+    <section id="aboutme">
         <h1>Who am I?</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo deserunt unde at sapiente error corporis labore, excepturi rem consequuntur? Natus est alias rem, ab distinctio quibusdam velit. Id, fugiat molestias?
+        <div class="aboutme__container">
+        <div class="text">
+        <p><span>Hi! </span> I'm a highly motivated and effective .Net and web development student.
+            I have a positive attitude and attacks new problem with an ambitious set of mind, and I have no problems with working in close collaboration with colleagues, aswell as working alone.
+
         </p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus totam pariatur saepe, aliquam facilis eveniet corporis ipsam consequatur quasi eos!
+        <p >
+            After 20 years in the restaurant business, working as a chef for 12 years and later as an educator for 8 years, I decided I needed a new challenge in life. Since I am interested in problem solving and I decided to go for a career as a developer. 
         </p>
-    <div class="item2">    
+    </div>
     <img id="aboutme__img" src="img/Mikael.JPG" alt="Picture of me">
-</div>    
+</div>
 <hr class="whiteline">
 </section>
 
-    <section class="portfolio">
+    <section id="portfolio">
         <h1>Some of my work</h1>
         <div class="projects_container">
 
@@ -70,29 +75,47 @@
                 <p class="project__text">One of my first school assigments. An adventure game made in C#. </p>
             </div>
         </div>
-        <div class="portf__cont">
-           
-        <h3>Techniques I have used</h3>
-        <h3>Try my game</h3>
-
+        
         <hr class="whiteline">
     </section>
 
-    <section class="contact">
-        <h1>Contact</h1>
-        <p>CONTACTFORM HERE</p>
-        <p>GOOGLEMAPS API HERE</p>
-        <p>I live in Vänersborg, Sweden, and I am open for work within a distance of 45min drive. I am also intressted in part time or full time work from home. </p>
-        <hr class="whiteline">
+    <section id="contact">
+            <a  href="mailto:mikael_larsson84@hotmail.com"><h2 class="btn__mail">Contact me</h2></a>
     </section>
 
-    <script src="javascript/scripts.js"></script>
+    <hr class="whiteline">
 </body>
 <footer class="main__footer">
-    <nav>
-        <h1>Mikael Larsson</h1>
-        <p>BOOTSTRAP PAGE NAV HERE</p>
+    <div class="footer__container">
+    <nav class="navbar navbar-inverse fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+        
+                <Button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </Button>
+        
+            <a class="navbar-brand" href="#home">Mikael Larsson, Developer</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="nav1">
+            <ul class="nav navbar-nav navbar-right">	  
+                <li> <a class="footer-links" href="#home">Home</a></li>
+                    <li> <a class="footer-links" href="#aboutme">About Me</a></li>
+                    <li> <a class="footer-links" href=#portfolio>Portfolio</a></li>
+                    <li> <a class="footer-links" href="#contact">Contact</a></li>
+            </ul>
+            </div>
+
+        </div>
     </nav>
-    <p>Copyright</p>
+      <div class="copyright">
+    <p>Copyright © by Mikael Larsson. </p>
+    <p>This page was made as a school assignment, 2021. </p>
+</div>
+</div>
+</div>
 </footer>
 </html>

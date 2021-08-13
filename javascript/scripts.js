@@ -28,3 +28,13 @@ document.addEventListener("keydown", function (e) {
   }
 });
 */
+/*
+const sendMail = function () {
+  mail.href = "mailto:mikael_larsson84@hotmail.com";
+  mail.click("button");
+};
+
+var mail = document.createElement("a");
+var button = document.querySelector(".test");
+button = document.addEventListener("click", sendMail);
+*/

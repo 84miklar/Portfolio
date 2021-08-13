@@ -2,14 +2,23 @@
 
 :root {
   --clr-primary: #1d91f0;
-  --clr-primary-dark: #095d91;
-  --clr-primary-bg: #87ceeb;
+  --clr-primary-dark: #39a2db;
+  --clr-primary-bg: #a2dbfa;
+  --clr-navbar: rgb(44, 44, 44);
+  --clr-links: rgb(179, 179, 179);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   paddding: 0;
   background: linear-gradient(var(--clr-primary-bg), var(--clr-primary));
+  font-size: 1.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
 }
 
 *,
@@ -39,46 +48,130 @@ h2 {
   margin: 4em;
 }
 /*1. Home */
-.home {
+#home {
   height: fit-content;
+}
+#home h1 {
+  margin-top: 2em;
 }
 
 .quote {
-  margin: 0.5em;
+  margin: 1em;
   margin-top: 4em;
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-style: italic;
 }
+
+@media screen and (min-width: 700px) {
+  .quote {
+    margin: 2.5em;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .quote {
+    margin: 3.5em;
+    font-size: 2.4rem;
+  }
+  #home h1 {
+    margin-top: 2.5em;
+    font-size: 5rem;
+  }
+}
+
 .main__nav {
-  background-color: #222;
-  height: 250px;
+  background-color: var(--clr-navbar);
   text-align: center;
   height: max-content;
-  padding: 2em;
+}
+.main__nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.links {
-  font-size: 2.5rem;
-  margin: auto;
-  padding: 0.3em;
-  color: rgb(211, 211, 211);
-}
-
-.links:hover {
+.main__nav a:hover {
   color: var(--clr-primary-bg);
 }
 
-/* 2. About Me*/
-.aboutme {
-  text-align: center;
+.links {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--clr-links);
 }
 
-.aboutme img {
+@media screen and (min-width: 700px) {
+  .main__nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    padding: 3em;
+  }
+  .links {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .main__nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding: 3em;
+  }
+  .links {
+    font-size: 4rem;
+  }
+}
+
+/* 2. About Me*/
+#aboutme {
+  margin: 4rem 1rem;
+  text-align: center;
+}
+#aboutme span {
+  font-size: 3rem;
+  margin-right: 1rem;
+  font-weight: bolder;
+}
+
+#aboutme img {
   border-radius: 50%;
   width: 247.2px;
   height: 295.5px;
+  margin-top: 4em;
+}
+
+@media screen and (min-width: 700px) {
+  #aboutme {
+    font-size: 1.7rem;
+  }
+  .aboutme__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+  }
+  .text {
+    margin-top: 3.5em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #aboutme {
+    font-size: 1.7rem;
+  }
+  .aboutme__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 2em;
+    justify-items: center;
+    align-items: center;
+  }
+  .text {
+    margin-top: 3.5em;
+    grid-column: 2/3;
+  }
 }
 
 /* 3. Portfolio*/
@@ -89,6 +182,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   height: fit-content;
+  width: fit-content;
   padding: 1rem;
 }
 .project {
@@ -104,14 +198,71 @@ h2 {
   text-align: center;
   margin: 0;
 }
-.showroom__text {
-}
 
 #calculator {
   text-align: center;
   margin: 0;
 }
+
+.project {
+  width: 90%;
+}
+
 #adventure {
   text-align: center;
   margin: 0;
+}
+
+#portfolio h3 {
+  text-align: center;
+}
+
+/*4. Contact*/
+#contact {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+.btn__mail {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-links);
+  background: var(--clr-navbar);
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  font-weight: bold;
+}
+.btn__mail:hover {
+  color: var(--clr-primary-bg);
+  text-decoration-line: none;
+
+  transform: scale(1.1);
+}
+a:link {
+  text-decoration: none;
+}
+
+/*5 Footer*/
+
+.main__footer {
+  background-color: var(--clr-navbar);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-right: 2em;
+  margin-left: 1em;
+}
+
+.copyright {
+  color: var(--clr-links);
+  text-align: right;
+  margin: 1.5em;
+  font-size: 1.3rem;
+}
+.navbar {
+  background: var(--clr-navbar);
+  height: fit-content;
 }
