@@ -38,3 +38,28 @@ var mail = document.createElement("a");
 var button = document.querySelector(".test");
 button = document.addEventListener("click", sendMail);
 */
+
+const image = document.querySelector(".project");
+const modal = document.querySelector(".project__text");
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  image.classList.add("img__scaledown");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden");
+  image.classList.remove("img__scaledown");
+};
+
+const imageClicked = function () {
+  if (!image.classList.contains("img__scaledown")) {
+    openModal();
+  } else {
+    closeModal();
+  }
+};
+
+modal.addEventListener("click", closeModal);
+
+image.addEventListener("click", imageClicked);
