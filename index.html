@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/78a62132df.js" crossorigin="anonymous"></script>
  
     <title>Mikael Larssons Portfolio</title>
 </head>
@@ -43,13 +44,18 @@
         <h1>Who am I?</h1>
         <div class="aboutme__container">
         <div class="text">
-        <p><span>Hi! </span> I'm a highly motivated and effective .Net and web development student.
+        <p><span>Hi! </span> I'm a highly motivated and effective .Net and web development student from Vänersborg, Sweden.
             I have a positive attitude and attacks new problem with an ambitious set of mind, and I have no problems with working in close collaboration with colleagues, aswell as working alone.
-
         </p>
+        <i class="fas fa-laptop"></i>
+        <p>
+            With techniques like <strong>C#, HTML, CSS, Javascript and React</strong>, I have about equal amount of experience between back end programming and front end, and equal interest!
+        </p>
+        <i class="fas fa-school"></i>
         <p >
-            After 20 years in the restaurant business, working as a chef for 12 years and later as an educator for 8 years, I decided I needed a new challenge in life. Since I am interested in problem solving and I decided to go for a career as a developer. 
+             After 20 years in the restaurant business, working as a chef for 12 years and later as an educator for 8 years, I decided I needed a new challenge in life. Since I am interested in problem solving and I decided to go for a career as a developer. 
         </p>
+        
     </div>
     <img id="aboutme__img" src="img/Mikael.JPG" alt="Picture of me">
 </div>
@@ -57,35 +63,41 @@
 </section>
 
     <section id="portfolio">
+       
         <h1>Some of my work</h1>
         <div class="projects_container">
 
             <div id="showroom">
-                <img class="showroom__img project" src="img/Shoowroom.png" alt="picture of a portfolio project">
+                <img class="project showroom__img " src="img/Shoowroom.png" alt="picture of a portfolio project">
                <p class="showroom__text project__text hidden">A portfolio made in React, as part of a school assignment.</p>
             </div>
                 
 
             <div id="calculator">
-                <img class="calc__img project" src="img/calculator.png" alt="picture of geometric calculator project">
-                <p class="project__text hidden">A calculator that calculates the area and perimeter of shapes. Console app in C#.</p>
+                <img class="project calc__img " src="img/calculator.png" alt="picture of geometric calculator project">
+                <p class="calc__text project__text hidden">A calculator that calculates the area and perimeter of shapes. Console app in C#.</p>
             </div>
 
             <div id="adventure">
-                <img class="advent__img project" src="img/adventure.png" alt="picture of adventure game">
-                <p class="project__text">One of my first school assigments. An adventure game made in C#. </p>
+                <img class="project advent__img" src="img/adventure.png" alt="picture of adventure game">
+                <p class="advent__text project__text hidden">One of my first school assigments. An adventure game made in C#. </p>
             </div>
         </div>
     </div>
-    <script src="javascript/scripts.js"></script>
+  
         <hr class="whiteline">
     </section>
 
+    
     <section id="contact">
-            <a  href="mailto:mikael_larsson84@hotmail.com"><h2 class="btn__mail">Contact me</h2></a>
+        <div class="contact__text"><h4><span>Hey! </span>If you would like to read my CV or just have a chat I would be very happy! I'm always interested in new collaborations.   </h4></div>
+            <a class="mailme" href="mailto:mikael_larsson84@hotmail.com"><h2 class="button">mail me</h2></a>
+            <a class="linkedin icon" href="https://www.linkedin.com/in/mikael-larsson-bb85ab1bb/"><img src="img/linkedin.png" alt="LinkedIn logo"> </a>
+            <a class="github icon" href="https://github.com/84miklar"><img src="img/github.png" alt="GitHub logo"></a>
     </section>
 
     <hr class="whiteline">
+    <script src="javascript/scripts.js"></script>
 </body>
 <footer class="main__footer">
     <div class="footer__container">

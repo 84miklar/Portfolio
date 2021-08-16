@@ -175,8 +175,9 @@ h2 {
 }
 
 /* 3. Portfolio*/
-.porfolio {
+#portfolio {
   margin: 2em;
+  text-align: center;
 }
 
 .projects_container {
@@ -212,12 +213,8 @@ h2 {
 #adventure {
   text-align: center;
   margin: 0;
-  object-fit: cover;
 }
 
-#portfolio h3 {
-  text-align: center;
-}
 .project__text {
   border-radius: 20px;
   padding: 0;
@@ -236,7 +233,7 @@ h2 {
   background-color: var(--clr-navbar);
   color: var(--clr-links);
   font-size: 2rem;
-  z-index: 1;
+  z-index: 0;
   margin-top: 0em;
 }
 .hidden {
@@ -259,7 +256,6 @@ h2 {
   }
   .project:hover {
     opacity: 1;
-    transform: scale(1.3);
   }
   #calculator {
     grid-column-start: 2;
@@ -267,14 +263,45 @@ h2 {
     grid-row-end: 3;
   }
 }
+@media screen and (min-width: 1400px) {
+  .project {
+    width: 100%;
+  }
+  .projects_container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+  #calculator {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  #showroom {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  #adventure {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
 
 /*4. Contact*/
 #contact {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  align-content: center;
+  place-items: center;
   margin: 2em;
 }
-.btn__mail {
+.button {
   cursor: pointer;
   text-decoration: none;
   color: var(--clr-links);
@@ -282,8 +309,9 @@ h2 {
   padding: 0.5em 1em;
   border-radius: 2em;
   font-weight: bold;
+  width: max-content;
 }
-.btn__mail:hover {
+.button:hover {
   color: var(--clr-primary-bg);
   text-decoration-line: none;
 
@@ -291,6 +319,47 @@ h2 {
 }
 a:link {
   text-decoration: none;
+}
+.contact__text {
+  border: solid 3px #ffd432;
+  border-radius: 2em;
+  padding: 1em;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.contact__text span {
+  font-weight: bolder;
+}
+.contact__text:hover {
+  transform: scale(1.1);
+}
+.mailme {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.linkedin {
+  justify-self: end;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 60%;
+}
+.github {
+  justify-self: start;
+  grid-column-start: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 60%;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 700px) {
+  .icon {
+    width: 30%;
+  }
 }
 
 /*5 Footer*/
