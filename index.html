@@ -68,29 +68,55 @@
         <div class="projects_container">
 
             <div id="showroom">
-                <img class="project showroom__img " src="img/Shoowroom.png" alt="picture of a portfolio project">
+                <img class="project showroom__img " onclick="toggleProject('showroom__img', 'showroom__text')" src="img/Shoowroom.png" alt="picture of a portfolio project">
                <p class="showroom__text project__text hidden">A portfolio made in React, as part of a school assignment.</p>
             </div>
                 
 
             <div id="calculator">
-                <img class="project calc__img " src="img/calculator.png" alt="picture of geometric calculator project">
+                <img class="project calc__img " onclick="toggleProject('calc__img', 'calc__text')" src="img/calculator.png" alt="picture of geometric calculator project">
                 <p class="calc__text project__text hidden">A calculator that calculates the area and perimeter of shapes. Console app in C#.</p>
             </div>
 
             <div id="adventure">
-                <img class="project advent__img" src="img/adventure.png" alt="picture of adventure game">
+                <img class="project advent__img" onclick="toggleProject('advent__img', 'advent__text')" src="img/adventure.png" alt="picture of adventure game">
                 <p class="advent__text project__text hidden">One of my first school assigments. An adventure game made in C#. </p>
             </div>
         </div>
     </div>
-  
-        <hr class="whiteline">
-    </section>
+ 
+</section>
+<hr class="whiteline">
 
+    <section id="game__widget">
+    <button class="button game__button" onclick="toggleGame()">Try my little game!</button>
+        <div class="game hidden">
+       
+            <h2>Mental arithmetic</h2>
+<button class="btn start">Start</button>           
+            <!-- <button class="btn btn-begin">Get numbers</button> -->
+            <button class="btn guess">Guess</button>
+        
+    
+       <div class="problem">
+            <div class="numbers numOne border">?</div>
+            <div class="numbers calcType border">+</div>
+            <div class="numbers numTwo border">?</div>
+            <div class="numbers border"> = </div>
+            <div ><input type="number" class="entered__Number" ></div>
+        </div>
+        <p class="face">😑</p>
+        
+        <div class="points">
+        <h4>Points: </h4>
+        <span class="points__number">0</span>
+    </div>
+</div>
+    </section>
+    <hr class="whiteline">
     
     <section id="contact">
-        <div class="contact__text"><h4><span>Hey! </span>If you would like to read my CV or just have a chat I would be very happy! I'm always interested in new collaborations.   </h4></div>
+        <div class="contact__text"><h4><span>Hey! </span>If you would like to read my CV or just have a chat I would be very happy!</h4> <h4>I'm always interested in new collaborations.   </h4></div>
             <a class="mailme" href="mailto:mikael_larsson84@hotmail.com"><h2 class="button">mail me</h2></a>
             <a class="linkedin icon" href="https://www.linkedin.com/in/mikael-larsson-bb85ab1bb/"><img src="img/linkedin.png" alt="LinkedIn logo"> </a>
             <a class="github icon" href="https://github.com/84miklar"><img src="img/github.png" alt="GitHub logo"></a>
