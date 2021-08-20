@@ -9,14 +9,12 @@ const adventureImg = document.querySelector(".advent__img")
 const adventureTxt = document.querySelector(".advent__text")
 
 const toggleProject = function (image, text) {
-  if (
-    document.querySelector(`.${image}`).classList.contains("img__scaledown")
-  ) {
-    document.querySelector(`.${image}`).classList.remove("img__scaledown")
-    document.querySelector(`.${text}`).classList.add("hidden")
+  if (document.querySelector(`.${image}`).classList.contains("img--clicked")) {
+    document.querySelector(`.${image}`).classList.remove("img--clicked")
+    document.querySelector(`.${text}`).classList.remove("text--open")
   } else {
-    document.querySelector(`.${image}`).classList.add("img__scaledown")
-    document.querySelector(`.${text}`).classList.remove("hidden")
+    document.querySelector(`.${image}`).classList.add("img--clicked")
+    document.querySelector(`.${text}`).classList.add("text--open")
   }
 }
 
@@ -27,10 +25,10 @@ let life = ["X", "X", "X"]
 let toggleGame = function () {
   if (gameButton.textContent == "close game") {
     document.querySelector(".game__button").textContent = "try my little game"
-    document.querySelector(".game").classList.add("hidden")
+    document.querySelector(".game").classList.remove("game--open")
   } else {
     document.querySelector(".game__button").textContent = "close game"
-    document.querySelector(".game").classList.remove("hidden")
+    document.querySelector(".game").classList.add("game--open")
   }
 
   document.querySelector(".numOne").textContent = "?"
