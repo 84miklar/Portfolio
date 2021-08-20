@@ -73,8 +73,8 @@ let setCalcType = function () {
 
 //Sets new numbers and calculation type for the game
 const setNewNumbers = function () {
-  numberOne = Math.trunc(Math.random() * 10) + 1
-  numberTwo = Math.trunc(Math.random() * 5) + 1
+  numberOne = Math.trunc(Math.random() * 1000) + 1
+  numberTwo = Math.trunc(Math.random() * 1000) + 1
   calculationType = Math.trunc(Math.random() * 10) + 1
   document.querySelector(".numOne").textContent = numberOne
   document.querySelector(".calcType").textContent = setCalcType()
