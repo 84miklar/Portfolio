@@ -13,6 +13,7 @@ const toggleProject = function (image, text) {
   if (document.querySelector(`.${image}`).classList.contains("img--clicked")) {
     document.querySelector(`.${image}`).classList.remove("img--clicked")
     document.querySelector(`.${text}`).classList.remove("text--open")
+    document.querySelector(`.${text}`).removeAttribute("onclick")
   } else {
     document.querySelector(`.${image}`).classList.add("img--clicked")
     document.querySelector(`.${text}`).classList.add("text--open")
