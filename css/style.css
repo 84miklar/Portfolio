@@ -197,22 +197,18 @@ h2 {
   cursor: pointer;
   width: 80%;
   transition: 700ms;
-  overflow: hidden;
 }
 
 #showroom {
   text-align: center;
-  overflow: hidden;
 }
 
 #calculator {
   text-align: center;
-  margin: 0;
 }
 
 #adventure {
   text-align: center;
-  margin: 0;
 }
 
 .project__text {
@@ -221,22 +217,19 @@ h2 {
   background-color: var(--clr-navbar);
   color: var(--clr-links);
   font-size: 2rem;
-  z-index: 1;
+  cursor: pointer;
   margin: auto;
   margin-top: -3em;
   height: fit-content;
-  transform: translateX(100%);
+  transform: translateY(100%);
   opacity: 0;
   transition: 700ms ease;
 }
 .text--open {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
-.img--clicked {
-  transform: translateY(-30%);
-}
 .showroom__img.img--clicked {
   transform: translateY(-35%);
 }
@@ -256,9 +249,6 @@ h2 {
 
   .more__info {
     display: none;
-  }
-  .project {
-    flex-shrink: 0;
   }
 
   #calculator {
@@ -298,10 +288,6 @@ h2 {
 
 /*4. Game*/
 
-.hidden {
-  display: none;
-}
-
 #game__widget {
   margin: 2em;
   text-align: center;
@@ -313,6 +299,7 @@ h2 {
 .game.game--open {
   transform: scaleY(1);
   height: 100%;
+  opacity: 1;
 }
 
 .game {
@@ -328,6 +315,7 @@ h2 {
   background-color: var(--clr-accent);
   margin: auto;
   height: 0;
+  opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
   transition: 700ms;
