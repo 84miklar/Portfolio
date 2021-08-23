@@ -1,5 +1,21 @@
 "use strict"
 
+/*   NAVBAR */
+const navbar = document.querySelector(".main__nav")
+const links = document.querySelectorAll(".links")
+const hamburger = document.querySelector(".hamburger")
+const toggleNavbar = function () {
+  if (navbar.classList.contains("main__nav--closed")) {
+    navbar.classList.remove("main__nav--closed")
+    links.forEach((el) => el.classList.add("links--closed"))
+    hamburger.classList.add("hamburger--crossed")
+  } else {
+    navbar.classList.add("main__nav--closed")
+    links.forEach((el) => el.classList.remove("links--closed"))
+    hamburger.classList.remove("hamburger--crossed")
+  }
+}
+
 /*     PROJECTS      */
 const showroowImg = document.querySelector(".showroom__img")
 const showroomTxt = document.querySelector(".showroom__text")
