@@ -2,6 +2,7 @@ Webbramverk - React
 Inlämningsuppgift 1
 Mikael Larsson
 
+
 Felsökning av sidan
 
 Jag började med att skissa upp webbsidan på ett papper, ungefär hur jag ville att det skulle se ut. Därefter fick jag ganska snabbt till ett html-skelett där jag delade upp sidan i en body, där jag placerade de semantiska taggarna header och footer. Header delade jag upp i flera section som motsvarade de olika delarna av sidan som jag ville ha med. 
