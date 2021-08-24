@@ -17,12 +17,6 @@ const toggleNavbar = function () {
 }
 
 /*     PROJECTS      */
-const showroowImg = document.querySelector(".showroom__img")
-const showroomTxt = document.querySelector(".showroom__text")
-const calcImg = document.querySelector(".calc__img")
-const calcTxt = document.querySelector(".calc__text")
-const adventureImg = document.querySelector(".advent__img")
-const adventureTxt = document.querySelector(".advent__text")
 
 //Toggles classes for animation
 const toggleProject = function (image, text) {
@@ -38,7 +32,7 @@ const toggleProject = function (image, text) {
 
 /*       TRY MY GAME-BUTTON       */
 const gameButton = document.querySelector(".game__button")
-let life = ["X", "X", "X"]
+let life = ["🦄", "🦄", "🦄"]
 
 //Toggles classes för animation
 let toggleGame = function () {

@@ -1,0 +1,12 @@
+Webbramverk - React
+Inlämningsuppgift 1
+Mikael Larsson
+
+Externa verktyg
+
+För att nå väl godkänt-nivån hade jag först en tanke på att jag ville ha ett interaktivt API från google Maps med min hemstad utpekad för att visa inom vilket område jag kan tänka mig att arbeta. Jag följde en tutorial på youTube om hur man gjorde, och det var ganska lätt att lägga in det på min sida och jag fick det som jag ville ungefär. Men vad filmen inte visade var att det inte var gratis att använda, Google tar ut en månads- eller årsavgift. Jag fick det att fungera på min lokala sida, men det gick inte att använda i övrigt, tyvärr, så den idén fick jag skrota. Jag hade gärna lärt mig använda något annat API, men det får bli i ett annat projekt. 
+Jag har tidigare använt mig lite av Bootstrap i en kort Udemy-kurs, och kände att jag ville använda mig lite av det som mitt externa bibliotek. Jag undersökte ett flertal olika funktioner i Bootstrap och testade med lite olika, t ex en bildkarusell, som jag inte blev nöjd med. Det landade i att jag använde mig av blockquote som skapar en trevlig inramning för att lyfta fram ett citat, samt en collapseable navbar i min footer. Vad jag förstått genom att använda det, så använder sig Bootstrap av en egen CSS- och javascript-fil som man länkar till i sin head. Där sätts en massa fördefinerade CSS-attribut som man hämtar bara genom att ge sina HTML-taggar classnamn som motsvarar dessa. Det gör att mängden CSS man själv skriver minskar, vilket kan underlätta. Jag ville dock lära mig att även göra en egen navbar som jag satte som min huvudmeny och gjorde även den senare till en collapsable navbar det med hälp av Björns lektioner. 
+Som ett externt bibliotek har jag också använt mig av fontawesome.com för sin stora samling av ikoner och småbilder. Där hämtade jag de två små ikonerna i aboutme-sektionen. För att koppla mig mot fontawesome länkade jag mig även där till ett externt script i min head.    
+Min font har jag hämtat från fonts.google.com. Jag valde en som jag tyckte kändes trevlig, klickade i vilka versioner jag ville ha och kopplade dem till min portfolio via en @import i min CSS-fil. Om något misslyckas vid hämtningen av fonten, så skrivs hela sidan i en annan likande font istället som redan finns i CSS-biblioteket.
+Att lära sig att använda externa bibliotek känns väsentligt om man vill göra en modern webbsida. Det finns så många verktyg på nätet att använda, och jag tror att ju mer man lär känna dem, desto större blir ens kreativitet och möjligheter att skapa unika sidor. 
+
