@@ -234,6 +234,9 @@ h2 {
   height: 295.5px;
   margin-top: 4em;
 }
+.badge {
+  width: 60px;
+}
 
 @media screen and (min-width: 700px) {
   #aboutme {
