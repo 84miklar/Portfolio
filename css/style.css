@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap");
 
 :root {
-  --clr-primary: #1d91f0;
+  --clr-primary: #43a4f3;
   --clr-primary-dark: #39a2db;
   --clr-primary-bg: #a2dbfa;
   --clr-navbar: rgb(44, 44, 44);
   --clr-links: rgb(179, 179, 179);
-  --clr-accent: #f3cc3e;
+  --clr-accent: #fad85d;
 }
 
 html {
@@ -307,6 +307,9 @@ h2 {
   opacity: 1;
   cursor: pointer;
 }
+.calc__img {
+  width: 60%;
+}
 
 .showroom__img.img--clicked {
   transform: translateY(-35%);
@@ -335,6 +338,9 @@ h2 {
 @media screen and (min-width: 1400px) {
   .project {
     width: 70%;
+  }
+  .calc__img {
+    width: 60%;
   }
   .projects_container {
     display: grid;
@@ -480,6 +486,7 @@ a:link {
   text-align: center;
   grid-column-start: 2;
   grid-column-end: 5;
+  width: 60vw;
 }
 .contact__text span {
   font-weight: bolder;
@@ -510,7 +517,7 @@ a:link {
 }
 @media screen and (min-width: 700px) {
   .contact__text {
-    width: 60%;
+    width: 60vw;
   }
 }
 
@@ -537,4 +544,18 @@ a:link {
 .navbar {
   background: var(--clr-navbar);
   height: fit-content;
+}
+.sky {
+  display: none;
+}
+.name {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .sky {
+    display: block;
+  }
+  .name {
+    display: none;
+  }
 }

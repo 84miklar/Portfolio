@@ -32,7 +32,7 @@ const toggleProject = function (image, text) {
 
 /*       TRY MY GAME-BUTTON       */
 const gameButton = document.querySelector(".game__button");
-let life = ["🦄", "🦄", "🦄"];
+let life = ["💙", "💙", "💙"];
 
 //Toggles classes för animation
 let toggleGame = function () {
@@ -57,7 +57,7 @@ let resetGame = () => {
   document.querySelector(".start").classList.remove("hidden");
   guess.classList.add("hidden");
   document.querySelector(".entered__Number").value = "";
-  life = ["🦄", "🦄", "🦄"];
+  life = ["💙", "💙", "💙"];
   document.querySelector(".life").textContent = life;
 };
 
