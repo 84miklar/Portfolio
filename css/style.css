@@ -2,6 +2,8 @@
 
 :root {
   --clr-primary: #43a4f3;
+
+  --clr-primary2: #1a69aa;
   --clr-primary-dark: #39a2db;
   --clr-primary-bg: #a2dbfa;
   --clr-navbar: rgb(44, 44, 44);
@@ -16,7 +18,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(var(--clr-primary-bg), var(--clr-primary));
+  background: linear-gradient(var(--clr-primary-bg), var(--clr-primary2));
   font-size: 1.5rem;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -500,6 +502,7 @@ a:link {
   grid-column-end: 5;
 }
 .linkedin {
+  border: solid 0.5px white;
   justify-self: end;
   grid-column-start: 2;
   grid-row-start: 3;
@@ -517,7 +520,7 @@ a:link {
 }
 @media screen and (min-width: 700px) {
   .contact__text {
-    width: 60vw;
+    width: 40vw;
   }
 }
 
