@@ -3,7 +3,7 @@
 :root {
   --clr-primary: #43a4f3;
 
-  --clr-primary2: #1a69aa;
+  --clr-primary2: #0b71c5;
   --clr-primary-dark: #39a2db;
   --clr-primary-bg: #a2dbfa;
   --clr-navbar: rgb(44, 44, 44);
@@ -269,7 +269,9 @@ h2 {
   text-align: center;
   place-items: center;
 }
-
+#portfolio h1 {
+  padding: 0.5em;
+}
 .projects_container {
   display: flex;
   gap: 3em;
