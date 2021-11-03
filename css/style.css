@@ -520,6 +520,7 @@ a:link {
 }
 .icon {
   max-width: 80px;
+  min-width: 10px;
 }
 .icon:hover {
   transform: scale(1.1);
